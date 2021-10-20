@@ -1,0 +1,1064 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>front-end documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">front-end documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HistoryPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/history/history.page.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-history</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>history.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>history.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentCard" >currentCard</a>
+                            </li>
+                            <li>
+                                <a href="#days" >days</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getProgress" >getProgress</a>
+                            </li>
+                            <li>
+                                <a href="#level" >level</a>
+                            </li>
+                            <li>
+                                <a href="#pre_post" >pre_post</a>
+                            </li>
+                            <li>
+                                <a href="#rangeElement" >rangeElement</a>
+                            </li>
+                            <li>
+                                <a href="#slideElement" >slideElement</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toastController" >toastController</a>
+                            </li>
+                            <li>
+                                <a href="#waitingForResponse" >waitingForResponse</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setCurrent" >setCurrent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#slide" >slide</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(toastController: ToastController, getProgress: <a href="../injectables/GetProgressService.html" target="_self">GetProgressService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/history/history.page.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>toastController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>getProgress</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GetProgressService.html" target="_self" >GetProgressService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/history/history.page.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/history/history.page.ts:17</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCurrent"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setCurrent</b></span>
+                        <a href="#setCurrent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setCurrent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/history/history.page.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slide"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>slide</b></span>
+                        <a href="#slide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>slide(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/history/history.page.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentCard"></a>
+                    <span class="name">
+                        <span ><b>currentCard</b></span>
+                        <a href="#currentCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/history/history.page.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="days"></a>
+                    <span class="name">
+                        <span ><b>days</b></span>
+                        <a href="#days"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[{}, {}, {}, {}, {}, {}, {}, {}]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/history/history.page.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProgress"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getProgress</b></span>
+                        <a href="#getProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/GetProgressService.html" target="_self" >GetProgressService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/history/history.page.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="level"></a>
+                    <span class="name">
+                        <span ><b>level</b></span>
+                        <a href="#level"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/history/history.page.ts:65</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pre_post"></a>
+                    <span class="name">
+                        <span ><b>pre_post</b></span>
+                        <a href="#pre_post"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[{}, {}]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/history/history.page.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rangeElement"></a>
+                    <span class="name">
+                        <span ><b>rangeElement</b></span>
+                        <a href="#rangeElement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IonSlides</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;rangeElement&#x27;, {static: false})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/history/history.page.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slideElement"></a>
+                    <span class="name">
+                        <span ><b>slideElement</b></span>
+                        <a href="#slideElement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IonSlides</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;slideElement&#x27;, {static: false})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/history/history.page.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toastController"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>toastController</b></span>
+                        <a href="#toastController"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ToastController</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/history/history.page.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="waitingForResponse"></a>
+                    <span class="name">
+                        <span ><b>waitingForResponse</b></span>
+                        <a href="#waitingForResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/history/history.page.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ViewChild } from &#x27;@angular/core&#x27;;
+import { IonSlides, ToastController } from &#x27;@ionic/angular&#x27;;
+import { GetProgressService } from &#x27;../service/get-progress.service&#x27;;
+import { timer } from &#x27;rxjs&#x27;;
+
+@Component({
+  selector: &#x27;app-history&#x27;,
+  templateUrl: &#x27;history.page.html&#x27;,
+  styleUrls: [&#x27;history.page.scss&#x27;]
+})
+export class HistoryPage {
+  @ViewChild(&#x27;slideElement&#x27;, {static: false}) slideElement: IonSlides;
+  @ViewChild(&#x27;rangeElement&#x27;, {static: false}) rangeElement: IonSlides;
+
+  constructor(public toastController : ToastController, public getProgress : GetProgressService) {}
+
+  ngOnInit() {}
+
+  ionViewWillEnter() {
+
+    this.waitingForResponse &#x3D; true;
+
+    timer(1000).subscribe(() &#x3D;&gt; {
+
+      this.getProgress.getData().subscribe((res) &#x3D;&gt; {
+
+        for (let i : number &#x3D; 0; i &lt; res[&#x27;days&#x27;].length; i++) {
+          if (res[&#x27;days&#x27;][i][&#x27;nameface&#x27;] !&#x3D; -1 &amp;&amp; res[&#x27;days&#x27;][i][&#x27;whosnew&#x27;] !&#x3D; -1 &amp;&amp; res[&#x27;days&#x27;][i][&#x27;memory&#x27;] !&#x3D; -1 &amp;&amp; res[&#x27;days&#x27;][i][&#x27;shuffle&#x27;] !&#x3D; -1 &amp;&amp; res[&#x27;days&#x27;][i][&#x27;forcedchoice&#x27;] !&#x3D; -1 &amp;&amp; res[&#x27;days&#x27;][i][&#x27;samedifferent&#x27;] !&#x3D; -1) {
+            this.days[i] &#x3D; res[&#x27;days&#x27;][i];
+            this.days[i][&#x27;date&#x27;] &#x3D; new Date(this.days[i][&#x27;date&#x27;]).toLocaleDateString();
+          }
+        }
+
+        this.level &#x3D; res[&#x27;level&#x27;]
+        if (this.level &gt; 0) {
+          this.level--;
+        }
+
+        if (res[&#x27;pre&#x27;][&#x27;score&#x27;]) {
+          this.pre_post[0] &#x3D; {score: res[&#x27;pre&#x27;][&#x27;score&#x27;], date: new Date(res[&#x27;pre&#x27;][&#x27;date&#x27;]).toLocaleDateString()};
+        }
+        if (res[&#x27;post&#x27;][&#x27;score&#x27;]) {
+          this.pre_post[1] &#x3D; {score: res[&#x27;post&#x27;][&#x27;score&#x27;], date: new Date(res[&#x27;post&#x27;][&#x27;date&#x27;]).toLocaleDateString()};
+        }
+
+        this.waitingForResponse &#x3D; false;
+        timer(1000).subscribe(() &#x3D;&gt; {this.slide(this.level)})
+
+      }, async (err) &#x3D;&gt; { 
+        const toast &#x3D; await this.toastController.create({
+          message: &#x27;Something went wrong. Please try logging out and back in&#x27;,
+          color: &#x27;danger&#x27;,
+          duration: 2000
+        });
+        toast.present();
+      });
+
+    });
+
+  }
+
+  days : any &#x3D; [{}, {}, {}, {}, {}, {}, {}, {}];
+  pre_post : any &#x3D; [{}, {}];
+  currentCard : number &#x3D; 0;
+  level : number;
+  waitingForResponse : boolean;
+
+  async slide(index: number) {
+    await this.slideElement.slideTo(index);
+  }
+
+  async setCurrent() {
+    this.currentCard &#x3D; await this.slideElement.getActiveIndex();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content style&#x3D;&quot;--background: rgb(34,31,32)&quot;&gt;
+
+	&lt;ion-header&gt;
+		&lt;ion-toolbar color &#x3D; &quot;dark&quot;&gt;
+			&lt;ion-title&gt;
+				History
+      		&lt;/ion-title&gt;
+			&lt;ion-buttons slot&#x3D;&quot;start&quot;&gt;
+				&lt;ion-menu-button autoHide&#x3D;&quot;false&quot;&gt;&lt;/ion-menu-button&gt;
+			&lt;/ion-buttons&gt;
+		&lt;/ion-toolbar&gt;
+	&lt;/ion-header&gt;
+
+	&lt;div *ngIf&#x3D;&quot;waitingForResponse&quot; style&#x3D;&quot;height: 90%; display: flex; justify-content: center; align-items: center&quot;&gt;
+		&lt;ion-spinner name&#x3D;&quot;crescent&quot; color&#x3D;&quot;light&quot;&gt;&lt;/ion-spinner&gt;
+	&lt;/div&gt;
+
+	&lt;div *ngIf&#x3D;&quot;!waitingForResponse&quot; class&#x3D;&quot;center-col&quot; style&#x3D;&quot;height: 100%; width: 100%; margin-top: 10%&quot;&gt;
+
+		&lt;div style&#x3D;&quot;height: 15%; width: 100%; text-align: center&quot;&gt;
+			&lt;div class&#x3D;&quot;header&quot; style&#x3D;&quot;color:white&quot;&gt;
+				&lt;div *ngIf&#x3D;&quot;currentCard &#x3D;&#x3D; 0&quot;&gt;Pre-Assessment&lt;/div&gt;
+				&lt;div *ngIf&#x3D;&quot;currentCard &gt; 0 &amp;&amp; currentCard &lt; 9&quot;&gt;Level {{currentCard}}&lt;/div&gt;
+				&lt;div *ngIf&#x3D;&quot;currentCard &#x3D;&#x3D; 9&quot;&gt;Post-Assessment&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;ion-item style&#x3D;&quot;width: 100%; --background: rgb(34,31,32); margin-top: 5%&quot; lines&#x3D;&quot;none&quot;&gt;
+				&lt;ion-range #rangeElement min&#x3D;&quot;0&quot; max&#x3D;&quot;9&quot; step&#x3D;&quot;1&quot; snaps&#x3D;&quot;true&quot; ticks&#x3D;&quot;false&quot; (ionChange)&#x3D;&quot;slide($event.detail.value)&quot; [(ngModel)]&#x3D;&quot;currentCard&quot;&gt;&lt;/ion-range&gt;
+			&lt;/ion-item&gt;
+		&lt;/div&gt;
+
+		&lt;ion-slides #slideElement style&#x3D;&quot;width: 100%; height: 55%; margin-top: 10%&quot; (ionSlideWillChange)&#x3D;&quot;setCurrent()&quot;&gt;
+
+			&lt;ion-slide&gt;
+
+				&lt;ion-card class&#x3D;&quot;center-col&quot; style&#x3D;&quot;justify-content: center; height: 100%; width: 100%&quot; [ngClass]&#x3D;&quot;{&#x27;not-completed&#x27;: !pre_post[0].date}&quot;&gt;
+				
+					&lt;div class&#x3D;&quot;center-col&quot; *ngIf&#x3D;&quot;pre_post[0].date&quot; style&#x3D;&quot;height: 100%; width: 100%; justify-content: space-evenly;&quot;&gt;
+						&lt;div style&#x3D;&quot;text-align: center; font-size: 10vw; color: rgb(206,183,124)&quot;&gt;
+							&lt;div&gt;{{pre_post[0].date}}&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+							&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;clipboard&quot; style&#x3D;&quot;font-size: 24vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+							&lt;span style&#x3D;&quot;font-size: 16vw&quot;&gt;{{pre_post[0].score}}&lt;/span&gt;
+							&lt;span style&#x3D;&quot;font-size: 6vw&quot;&gt;/30&lt;/span&gt;
+						&lt;/ion-item&gt;
+					&lt;/div&gt;
+					&lt;div *ngIf&#x3D;&quot;!pre_post[0].date&quot;&gt;
+						&lt;span style&#x3D;&quot;font-size: 8vw&quot;&gt;Not yet completed&lt;/span&gt;
+					&lt;/div&gt;
+
+				&lt;/ion-card&gt;
+
+			&lt;/ion-slide&gt;
+
+			&lt;ion-slide *ngFor&#x3D;&quot;let day of days; let i &#x3D; index&quot;&gt;
+
+				&lt;ion-card class&#x3D;&quot;center-col&quot; style&#x3D;&quot;justify-content: center; height: 100%; width: 100%&quot; [ngClass]&#x3D;&quot;{&#x27;not-completed&#x27;: !day.date}&quot;&gt;
+
+					&lt;div *ngIf&#x3D;&quot;day.date&quot; class&#x3D;&quot;center-col&quot; style&#x3D;&quot;height: 100%; width: 100%; justify-content: space-evenly&quot;&gt;
+						&lt;div style&#x3D;&quot;text-align: center; font-size: 10vw; color: rgb(206,183,124); margin: 5%&quot;&gt;
+							&lt;div&gt;{{day.date}}&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div style&#x3D;&quot;display: flex; align-items: center&quot;&gt;
+							&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+								&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;happy&quot; style&#x3D;&quot;font-size: 18vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+								&lt;span style&#x3D;&quot;font-size: 10vw&quot;&gt;{{day.nameface}}&lt;/span&gt;
+								&lt;span style&#x3D;&quot;font-size: 4vw&quot;&gt;/8&lt;/span&gt;
+							&lt;/ion-item&gt;
+							&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+								&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;person-add&quot; style&#x3D;&quot;font-size: 18vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+								&lt;span style&#x3D;&quot;font-size: 10vw&quot;&gt;{{day.whosnew}}&lt;/span&gt;
+								&lt;span style&#x3D;&quot;font-size: 4vw&quot;&gt;/8&lt;/span&gt;
+							&lt;/ion-item&gt;
+						&lt;/div&gt;
+						&lt;div style&#x3D;&quot;display: flex; align-items: center&quot;&gt;
+							&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+								&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;grid&quot; style&#x3D;&quot;font-size: 18vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+								&lt;span style&#x3D;&quot;font-size: 9vw&quot;&gt;{{day.memory}}&lt;/span&gt;
+								&lt;span style&#x3D;&quot;font-size: 3.5vw&quot;&gt;/32&lt;/span&gt;
+							&lt;/ion-item&gt;
+							&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+								&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;swap&quot; style&#x3D;&quot;font-size: 18vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+								&lt;span style&#x3D;&quot;font-size: 9vw&quot;&gt;{{day.shuffle}}&lt;/span&gt;
+								&lt;span style&#x3D;&quot;font-size: 3vw&quot;&gt;/16&lt;/span&gt;
+							&lt;/ion-item&gt;
+						&lt;/div&gt;
+						&lt;div style&#x3D;&quot;display: flex; align-items: center&quot;&gt;
+							&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+								&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;contacts&quot; style&#x3D;&quot;font-size: 18vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+								&lt;span style&#x3D;&quot;font-size: 10vw&quot;&gt;{{day.forcedchoice}}&lt;/span&gt;
+								&lt;span style&#x3D;&quot;font-size: 4vw&quot;&gt;/8&lt;/span&gt;
+							&lt;/ion-item&gt;
+							&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+								&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;checkmark-circle&quot; style&#x3D;&quot;font-size: 18vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+								&lt;span style&#x3D;&quot;font-size: 10vw&quot;&gt;{{day.samedifferent}}&lt;/span&gt;
+								&lt;span style&#x3D;&quot;font-size: 4vw&quot;&gt;/8&lt;/span&gt;
+							&lt;/ion-item&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div *ngIf&#x3D;&quot;!day.date&quot;&gt;
+						&lt;span style&#x3D;&quot;font-size: 8vw&quot;&gt;Not yet completed&lt;/span&gt;
+					&lt;/div&gt;
+
+				&lt;/ion-card&gt;
+
+			&lt;/ion-slide&gt;
+
+			&lt;ion-slide&gt;
+
+				&lt;ion-card class&#x3D;&quot;center-col&quot; style&#x3D;&quot;justify-content: center; height: 100%; width: 100%&quot; [ngClass]&#x3D;&quot;{&#x27;not-completed&#x27;: !pre_post[1].date}&quot;&gt;
+
+					&lt;div *ngIf&#x3D;&quot;pre_post[1].date&quot; class&#x3D;&quot;center-col&quot; style&#x3D;&quot;height: 100%; width: 100%; justify-content: space-evenly;&quot;&gt;
+						&lt;div style&#x3D;&quot;text-align: center; font-size: 10vw; color: rgb(206,183,124)&quot;&gt;
+							&lt;div&gt;{{pre_post[1].date}}&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;ion-item style&#x3D;&quot;--background: gainsboro; color: black&quot; lines&#x3D;&quot;none&quot;&gt;
+							&lt;ion-icon slot&#x3D;&quot;start&quot; name&#x3D;&quot;clipboard&quot; style&#x3D;&quot;font-size: 24vw&quot; color&#x3D;&quot;primary&quot;&gt;&lt;/ion-icon&gt;
+							&lt;span style&#x3D;&quot;font-size: 16vw&quot;&gt;{{pre_post[1].score}}&lt;/span&gt;
+							&lt;span style&#x3D;&quot;font-size: 6vw&quot;&gt;/30&lt;/span&gt;
+						&lt;/ion-item&gt;
+					&lt;/div&gt;
+					&lt;div *ngIf&#x3D;&quot;!pre_post[1].date&quot;&gt;
+						&lt;span style&#x3D;&quot;font-size: 8vw&quot;&gt;Not yet completed&lt;/span&gt;
+					&lt;/div&gt;
+
+				&lt;/ion-card&gt;
+
+			&lt;/ion-slide&gt;
+
+		&lt;/ion-slides&gt;
+
+	&lt;/div&gt;
+
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>history.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-card {
+	--background: gainsboro;
+}
+
+.not-completed {
+	--background: rgb(185, 185, 185);
+	opacity: 0.8;
+}
+
+.center-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content style="--background: rgb(34,31,32)">	<ion-header>		<ion-toolbar color = "dark">			<ion-title>				History      		</ion-title>			<ion-buttons slot="start">				<ion-menu-button autoHide="false"></ion-menu-button>			</ion-buttons>		</ion-toolbar>	</ion-header>	<div *ngIf="waitingForResponse" style="height: 90%; display: flex; justify-content: center; align-items: center">		<ion-spinner name="crescent" color="light"></ion-spinner>	</div>	<div *ngIf="!waitingForResponse" class="center-col" style="height: 100%; width: 100%; margin-top: 10%">		<div style="height: 15%; width: 100%; text-align: center">			<div class="header" style="color:white">				<div *ngIf="currentCard == 0">Pre-Assessment</div>				<div *ngIf="currentCard > 0 && currentCard < 9">Level {{currentCard}}</div>				<div *ngIf="currentCard == 9">Post-Assessment</div>			</div>			<ion-item style="width: 100%; --background: rgb(34,31,32); margin-top: 5%" lines="none">				<ion-range #rangeElement min="0" max="9" step="1" snaps="true" ticks="false" (ionChange)="slide($event.detail.value)" [(ngModel)]="currentCard"></ion-range>			</ion-item>		</div>		<ion-slides #slideElement style="width: 100%; height: 55%; margin-top: 10%" (ionSlideWillChange)="setCurrent()">			<ion-slide>				<ion-card class="center-col" style="justify-content: center; height: 100%; width: 100%" [ngClass]="{\'not-completed\': !pre_post[0].date}">									<div class="center-col" *ngIf="pre_post[0].date" style="height: 100%; width: 100%; justify-content: space-evenly;">						<div style="text-align: center; font-size: 10vw; color: rgb(206,183,124)">							<div>{{pre_post[0].date}}</div>						</div>						<ion-item style="--background: gainsboro; color: black" lines="none">							<ion-icon slot="start" name="clipboard" style="font-size: 24vw" color="primary"></ion-icon>							<span style="font-size: 16vw">{{pre_post[0].score}}</span>							<span style="font-size: 6vw">/30</span>						</ion-item>					</div>					<div *ngIf="!pre_post[0].date">						<span style="font-size: 8vw">Not yet completed</span>					</div>				</ion-card>			</ion-slide>			<ion-slide *ngFor="let day of days; let i = index">				<ion-card class="center-col" style="justify-content: center; height: 100%; width: 100%" [ngClass]="{\'not-completed\': !day.date}">					<div *ngIf="day.date" class="center-col" style="height: 100%; width: 100%; justify-content: space-evenly">						<div style="text-align: center; font-size: 10vw; color: rgb(206,183,124); margin: 5%">							<div>{{day.date}}</div>						</div>						<div style="display: flex; align-items: center">							<ion-item style="--background: gainsboro; color: black" lines="none">								<ion-icon slot="start" name="happy" style="font-size: 18vw" color="primary"></ion-icon>								<span style="font-size: 10vw">{{day.nameface}}</span>								<span style="font-size: 4vw">/8</span>							</ion-item>							<ion-item style="--background: gainsboro; color: black" lines="none">								<ion-icon slot="start" name="person-add" style="font-size: 18vw" color="primary"></ion-icon>								<span style="font-size: 10vw">{{day.whosnew}}</span>								<span style="font-size: 4vw">/8</span>							</ion-item>						</div>						<div style="display: flex; align-items: center">							<ion-item style="--background: gainsboro; color: black" lines="none">								<ion-icon slot="start" name="grid" style="font-size: 18vw" color="primary"></ion-icon>								<span style="font-size: 9vw">{{day.memory}}</span>								<span style="font-size: 3.5vw">/32</span>							</ion-item>							<ion-item style="--background: gainsboro; color: black" lines="none">								<ion-icon slot="start" name="swap" style="font-size: 18vw" color="primary"></ion-icon>								<span style="font-size: 9vw">{{day.shuffle}}</span>								<span style="font-size: 3vw">/16</span>							</ion-item>						</div>						<div style="display: flex; align-items: center">							<ion-item style="--background: gainsboro; color: black" lines="none">								<ion-icon slot="start" name="contacts" style="font-size: 18vw" color="primary"></ion-icon>								<span style="font-size: 10vw">{{day.forcedchoice}}</span>								<span style="font-size: 4vw">/8</span>							</ion-item>							<ion-item style="--background: gainsboro; color: black" lines="none">								<ion-icon slot="start" name="checkmark-circle" style="font-size: 18vw" color="primary"></ion-icon>								<span style="font-size: 10vw">{{day.samedifferent}}</span>								<span style="font-size: 4vw">/8</span>							</ion-item>						</div>					</div>					<div *ngIf="!day.date">						<span style="font-size: 8vw">Not yet completed</span>					</div>				</ion-card>			</ion-slide>			<ion-slide>				<ion-card class="center-col" style="justify-content: center; height: 100%; width: 100%" [ngClass]="{\'not-completed\': !pre_post[1].date}">					<div *ngIf="pre_post[1].date" class="center-col" style="height: 100%; width: 100%; justify-content: space-evenly;">						<div style="text-align: center; font-size: 10vw; color: rgb(206,183,124)">							<div>{{pre_post[1].date}}</div>						</div>						<ion-item style="--background: gainsboro; color: black" lines="none">							<ion-icon slot="start" name="clipboard" style="font-size: 24vw" color="primary"></ion-icon>							<span style="font-size: 16vw">{{pre_post[1].score}}</span>							<span style="font-size: 6vw">/30</span>						</ion-item>					</div>					<div *ngIf="!pre_post[1].date">						<span style="font-size: 8vw">Not yet completed</span>					</div>				</ion-card>			</ion-slide>		</ion-slides>	</div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsPage', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'ForcedChoiceComponent', 'selector': 'app-forced-choice'},{'name': 'HelpModalComponent', 'selector': 'app-help-modal'},{'name': 'HistoryPage', 'selector': 'app-history'},{'name': 'LearningTaskComponent', 'selector': 'app-learning-task'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MemoryMatchComponent', 'selector': 'app-memory-match'},{'name': 'NameFaceComponent', 'selector': 'app-name-face'},{'name': 'RaceSelectModalComponent', 'selector': 'app-race-select-modal'},{'name': 'SameDifferentComponent', 'selector': 'app-same-different'},{'name': 'ScorePageComponent', 'selector': 'app-score-page'},{'name': 'ShuffleComponent', 'selector': 'app-shuffle'},{'name': 'TermsConditionsComponent', 'selector': 'app-terms-conditions'},{'name': 'TrainingPage', 'selector': 'app-training'},{'name': 'UserSettingsPage', 'selector': 'app-user-settings'},{'name': 'WhosNewComponent', 'selector': 'app-whos-new'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HistoryPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HistoryPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -28,6 +28,10 @@ Run this from the front-end directory to start the app:
 Or include the '-l' parameter for a mobile view:
 ``ionic serve -l``
 
+Or run this to see documentation:
+
+``npm exec compodoc -- -p tsconfig.doc.json -s``
+
 ## Back end
 
 Run this from root to start a server:
@@ -35,4 +39,7 @@ Run this from root to start a server:
 
 Must include an auth.json file with a DATABASE_URL parameter to connect to a database when running locally.
 
-  
+ To start documentation, go into the documentation and run the following:
+
+ ``npm run start``
+

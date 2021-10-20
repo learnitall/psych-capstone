@@ -1,0 +1,967 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>front-end documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">front-end documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HelpModalComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/help-modal/help-modal.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-help-modal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./help-modal.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./help-modal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentSlide" >currentSlide</a>
+                            </li>
+                            <li>
+                                <a href="#displayFirst" >displayFirst</a>
+                            </li>
+                            <li>
+                                <a href="#hideQuit" >hideQuit</a>
+                            </li>
+                            <li>
+                                <a href="#showOverview" >showOverview</a>
+                            </li>
+                            <li>
+                                <a href="#slideElement" >slideElement</a>
+                            </li>
+                            <li>
+                                <a href="#slides" >slides</a>
+                            </li>
+                            <li>
+                                <a href="#task" >task</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#changeSlide" >changeSlide</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#closeModal" >closeModal</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#toggleOverview" >toggleOverview</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#firstDisplayed" >firstDisplayed</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modalController: ModalController, navParams: NavParams)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/help-modal/help-modal.component.ts:96</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modalController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navParams</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavParams</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="firstDisplayed"></a>
+                        <b>firstDisplayed</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/help-modal/help-modal.component.ts:95</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeSlide"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>changeSlide</b></span>
+                        <a href="#changeSlide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>changeSlide()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/help-modal/help-modal.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeModal"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>closeModal</b></span>
+                        <a href="#closeModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>closeModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/help-modal/help-modal.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/help-modal/help-modal.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleOverview"></a>
+                    <span class="name">
+                        <span ><b>toggleOverview</b></span>
+                        <a href="#toggleOverview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleOverview()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/help-modal/help-modal.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentSlide"></a>
+                    <span class="name">
+                        <span ><b>currentSlide</b></span>
+                        <a href="#currentSlide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/app/help-modal/help-modal.component.ts:124</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayFirst"></a>
+                    <span class="name">
+                        <span ><b>displayFirst</b></span>
+                        <a href="#displayFirst"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/help-modal/help-modal.component.ts:126</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideQuit"></a>
+                    <span class="name">
+                        <span ><b>hideQuit</b></span>
+                        <a href="#hideQuit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/help-modal/help-modal.component.ts:127</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showOverview"></a>
+                    <span class="name">
+                        <span ><b>showOverview</b></span>
+                        <a href="#showOverview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/app/help-modal/help-modal.component.ts:125</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slideElement"></a>
+                    <span class="name">
+                        <span ><b>slideElement</b></span>
+                        <a href="#slideElement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IonSlides</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;slideElement&#x27;, {static: false})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/help-modal/help-modal.component.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slides"></a>
+                    <span class="name">
+                        <span ><b>slides</b></span>
+                        <a href="#slides"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[][]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/app/help-modal/help-modal.component.ts:123</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="task"></a>
+                    <span class="name">
+                        <span ><b>task</b></span>
+                        <a href="#task"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/app/help-modal/help-modal.component.ts:122</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, Input } from &#x27;@angular/core&#x27;;
+import { ModalController, NavParams, IonSlides } from &#x27;@ionic/angular&#x27;;
+
+const slideValues &#x3D; {
+  &#x27;Start&#x27;: [
+    [&#x27;assets/help-slides/start/0.png&#x27;, &#x27;Welcome to your CRD training. Please take a minute to review these slides and familiarize yourself with the training process.&#x27;],
+    [&#x27;assets/help-slides/start/1.png&#x27;, &#x27;There are 8 levels to complete. You should complete one level per day, in about 10-15 minutes.&#x27;],
+    [&#x27;assets/help-slides/start/2.png&#x27;, &#x27;In the learning task you will learn the day\&#x27;s names and faces, then you will use those faces to complete the challenges in the four training tasks.&#x27;],
+    [&#x27;assets/help-slides/start/3.png&#x27;, &#x27;After passing the training tasks, you will complete two assessment tasks. Your level will increase after you finish.&#x27;],
+    [&#x27;assets/help-slides/start/4.png&#x27;, &#x27;Before Level 1 and after Level 8 you will complete an additional assessment to estimate your overall progress.&#x27;],
+    [&#x27;assets/help-slides/start/5.png&#x27;, &#x27;If you have questions about how to complete a task or what to do next, you can click the help icon in the upper-right corner.&#x27;],
+    [&#x27;assets/help-slides/start/6.png&#x27;, &#x27;Your data will be used to further research of CRD and facial recognition. For more information about the research visit the About Us page.&#x27;],
+    [&#x27;assets/help-slides/start/7.png&#x27;, &#x27;Should you need to review this information again, simply click the help icon in the upper right-hand corner of any help page.&#x27;]
+  ],
+  &#x27;Overview&#x27;: [
+    [&#x27;assets/help-slides/start/0.png&#x27;, &#x27;These slides will provide an overview of the training process.&#x27;],
+    [&#x27;assets/help-slides/start/1.png&#x27;, &#x27;There are 8 levels to complete. You should complete one level per day, in about 10-15 minutes.&#x27;],
+    [&#x27;assets/help-slides/start/2.png&#x27;, &#x27;In the learning task you will learn the day\&#x27;s names and faces, then you will use those faces to complete the challenges in the four training tasks.&#x27;],
+    [&#x27;assets/help-slides/start/3.png&#x27;, &#x27;After passing the training tasks, you will complete two assessment tasks. Your level will increase after you finish.&#x27;],
+    [&#x27;assets/help-slides/start/4.png&#x27;, &#x27;Before Level 1 and after Level 8 you will complete an additional assessment to estimate your overall progress.&#x27;],
+    [&#x27;assets/help-slides/start/5.png&#x27;, &#x27;If you have questions about how to complete a task or what to do next, you can click the help icon in the upper-right corner.&#x27;],
+    [&#x27;assets/help-slides/start/6.png&#x27;, &#x27;Your data will be used to further research of CRD and facial recognition. For more information about the research visit the About Us page.&#x27;]
+  ],
+  &#x27;Meet Today\&#x27;s Faces&#x27;: [
+    [&#x27;assets/help-slides/learning/0.png&#x27;, &#x27;Memorize the eight name-face pairs you are shown; they will be the basis of your daily training.&#x27;],
+    [&#x27;assets/help-slides/learning/1.png&#x27;, &#x27;You can come back to this module at any time after finishing.&#x27;]
+  ],
+  &#x27;Name and Face&#x27;: [
+    [&#x27;assets/help-slides/name-face/0.png&#x27;, &#x27;For each of the names you\&#x27;ve seen before, you\&#x27;ll be asked to match the appropriate face.&#x27;],
+    [&#x27;assets/help-slides/name-face/1.png&#x27;, &#x27;You\&#x27;ll get a point for each face you match correctly.&#x27;],
+    [&#x27;assets/help-slides/name-face/2.png&#x27;, &#x27;Whenever you guess incorrectly, you\&#x27;ll be shown the correct answer as well as the two names.&#x27;]
+  ],
+  &#x27;Who\&#x27;s New?&#x27;: [
+    [&#x27;assets/help-slides/whos-new/0.png&#x27;, &#x27;Select the face that you haven\&#x27;t yet seen today, and that wasn\&#x27;t part of the learning task.&#x27;],
+    [&#x27;assets/help-slides/whos-new/1.png&#x27;, &#x27;You\&#x27;ll get a point for each face you guess correctly.&#x27;],
+    [&#x27;assets/help-slides/whos-new/2.png&#x27;, &#x27;Whenever you guess incorrectly, you\&#x27;ll be shown the correct answer.&#x27;]
+  ],
+  &#x27;Memory Match&#x27;: [
+    [&#x27;assets/help-slides/memory-match/0.png&#x27;, &#x27;Click anywhere to show the faces and begin the timer.&#x27;],
+    [&#x27;assets/help-slides/memory-match/1.png&#x27;, &#x27;You will have 10 seconds to memorize the placement of as many face pairs as you can.&#x27;],
+    [&#x27;assets/help-slides/memory-match/2.png&#x27;, &#x27;After the timer is up, click the cards to match the pairs. When you correctly match a pair, they will be revealed.&#x27;],
+    [&#x27;assets/help-slides/memory-match/3.png&#x27;, &#x27;Correct matches award 4 points, while incorrect matches deduct 1 point.&#x27;]
+  ],
+  &#x27;Shuffle&#x27;: [
+    [&#x27;assets/help-slides/shuffle/0.png&#x27;, &#x27;Click anywhere to show the faces and begin the timer.&#x27;],
+    [&#x27;assets/help-slides/shuffle/1.png&#x27;, &#x27;You will have 10 seconds to memorize the placement of the faces.&#x27;],
+    [&#x27;assets/help-slides/shuffle/2.png&#x27;, &#x27;After the timer is up, click cards to swap their positions. Click \&#x27;Done\&#x27; when you think the positions are correct.&#x27;],
+    [&#x27;assets/help-slides/shuffle/3.png&#x27;, &#x27;For an incorrect solution, incorrect cards will be colored red. You will be awarded a point for each correct card.&#x27;],
+    [&#x27;assets/help-slides/shuffle/4.png&#x27;, &#x27;You can toggle between your solution and the correct solution with the toggle at the bottom.&#x27;]
+  ],
+  &#x27;Forced Choice&#x27;: [
+    [&#x27;assets/help-slides/forced-choice/0.png&#x27;, &#x27;Click anywhere to show the face and begin the timer.&#x27;],
+    [&#x27;assets/help-slides/forced-choice/1.png&#x27;, &#x27;You will have 3 seconds to memorize the face.&#x27;],
+    [&#x27;assets/help-slides/forced-choice/2.png&#x27;, &#x27;After the timer is up select the face that you saw.&#x27;],
+    [&#x27;assets/help-slides/forced-choice/3.png&#x27;, &#x27;You will receive a point for each correct answer.&#x27;]
+  ],
+  &#x27;Same-Different&#x27;: [
+    [&#x27;assets/help-slides/same-different/0.png&#x27;, &#x27;Click anywhere to show the face and begin the timer.&#x27;],
+    [&#x27;assets/help-slides/same-different/1.png&#x27;, &#x27;You will have 3 seconds to memorize the face.&#x27;],
+    [&#x27;assets/help-slides/same-different/2.png&#x27;, &#x27;After the timer is up, decide whether the face is the same.&#x27;],
+    [&#x27;assets/help-slides/same-different/3.png&#x27;, &#x27;You will receive a point for each correct answer.&#x27;]
+  ],
+  &#x27;Training Tasks&#x27;: [
+    [&#x27;assets/help-slides/training/0.png&#x27;, &#x27;Welcome to the training tasks. You can check today\&#x27;s face-name pairs however often you need with the bottom left-hand button.&#x27;],
+    [&#x27;assets/help-slides/training/1.png&#x27;, &#x27;When you complete a task, you can see your highest score. You must get at least 75% to pass each task, and can do them any number of times.&#x27;],
+    [&#x27;assets/help-slides/training/2.png&#x27;, &#x27;After passing every task, you can progress to the daily assessment tasks with the bottom right-hand button. You will not be able to come back today after moving on.&#x27;]
+  ],
+  &#x27;Assessment Tasks&#x27;: [
+    [&#x27;assets/help-slides/assessment/0.png&#x27;, &#x27;The daily assessment tasks track your learning progress. You cannot redo or restart them.&#x27;]
+  ],
+  &#x27;Finish&#x27;: [
+    [&#x27;assets/help-slides/finish/0.png&#x27;, &#x27;You are done for the day, come back tomorrow for your next training. You can see your training history on the history page.&#x27;]
+  ],
+  &#x27;Pre-Assessment&#x27;: [
+    [&#x27;assets/help-slides/pre-post/0.png&#x27;, &#x27;Welcome to your pre-assessment. This is a one-time test; it will provide a baseline for your current CRD.&#x27;],
+    [&#x27;assets/help-slides/same-different/0.png&#x27;, &#x27;Click anywhere to show the face and begin the timer.&#x27;],
+    [&#x27;assets/help-slides/same-different/1.png&#x27;, &#x27;You will have 3 seconds to memorize the face.&#x27;],
+    [&#x27;assets/help-slides/same-different/2.png&#x27;, &#x27;After the timer is up, decide whether the face is the same.&#x27;],
+    [&#x27;assets/help-slides/pre-post/1.png&#x27;, &#x27;This test consists of 30 questions, so set aside a few minutes to complete it.&#x27;],
+    [&#x27;assets/help-slides/finish/0.png&#x27;, &#x27;When you have finished you can officially begin your training in Level 1.&#x27;]
+  ],
+  &#x27;Post-Assessment&#x27;: [
+    [&#x27;assets/help-slides/pre-post/0.png&#x27;, &#x27;Welcome to your post-assessment. This is your final test; after this, your participation in this research will be complete.&#x27;],
+    [&#x27;assets/help-slides/pre-post/1.png&#x27;, &#x27;This test consists of 30 questions, so set aside a few minutes to complete it.&#x27;]
+  ]
+}
+
+@Component({
+  selector: &#x27;app-help-modal&#x27;,
+  templateUrl: &#x27;./help-modal.component.html&#x27;,
+  styleUrls: [&#x27;./help-modal.component.scss&#x27;],
+})
+
+export class HelpModalComponent implements OnInit {
+  @Input() firstDisplayed : boolean;
+  @ViewChild(&#x27;slideElement&#x27;, {static: false}) slideElement: IonSlides;
+
+  constructor(private modalController: ModalController, private navParams: NavParams) { }
+
+  ngOnInit() {
+
+    this.task &#x3D; this.navParams.data.paramTask;
+    this.displayFirst &#x3D; this.navParams.data.displayFirst;
+    this.slides &#x3D; slideValues[this.task];
+    this.currentSlide &#x3D; 0;
+    this.showOverview &#x3D; false;
+
+    let images : any[] &#x3D; [];
+    for (let i &#x3D; 0; i &lt; this.slides.length; i++) {
+      images.push(new Image());
+      images[images.length - 1].src &#x3D; this.slides[i][0];
+    }
+
+    this.hideQuit &#x3D; false;
+    // Comment out below, in order to enable quit all the time. 
+    // There is a &quot;sliding&quot; bug preventing the user to reach the last slide and close it.
+    // if (this.displayFirst &amp;&amp; this.slides.length &gt; 1) {
+    //   this.hideQuit &#x3D; true;
+    // }
+  }
+
+  task : string;
+  slides : string[][];
+  currentSlide : number;
+  showOverview : boolean;
+  displayFirst : boolean;
+  hideQuit : boolean;
+
+  async closeModal() {
+    await this.modalController.dismiss();
+  }
+
+  async changeSlide() {
+    this.currentSlide &#x3D; await this.slideElement.getActiveIndex();
+    if (this.currentSlide &#x3D;&#x3D; this.slides.length - 1) {
+      this.hideQuit &#x3D; false;
+    }
+  }
+
+  toggleOverview() {
+    this.slideElement.slideTo(0);
+    if (this.showOverview) {
+      this.showOverview &#x3D; false;
+      this.ngOnInit();
+    } else {
+      this.showOverview &#x3D; true;
+      this.task &#x3D; &#x27;Overview&#x27;;
+      this.slides &#x3D; slideValues[this.task];
+
+      let images : any[] &#x3D; [];
+      for (let i &#x3D; 0; i &lt; this.slides.length; i++) {
+        images.push(new Image());
+        images[images.length - 1].src &#x3D; this.slides[i][0];
+      }
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content style&#x3D;&quot;--background: rgb(206,183,124); --color: white&quot;&gt;
+
+  &lt;ion-item lines&#x3D;&quot;none&quot; style&#x3D;&quot;font-size: 3vh; margin-top: 5%; text-align: center; --background: rgb(206,183,124); --color: white&quot;&gt;
+    &lt;ion-label&gt;
+      &lt;b&gt;{{task}}&lt;/b&gt;
+    &lt;/ion-label&gt;
+    &lt;ion-icon *ngIf&#x3D;&quot;showOverview&quot; (click)&#x3D;&quot;toggleOverview()&quot; slot&#x3D;&quot;start&quot; color&#x3D;&quot;dark&quot; name&#x3D;&quot;arrow-back&quot; style&#x3D;&quot;height: 3vh&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-icon (click)&#x3D;&quot;toggleOverview()&quot; slot&#x3D;&quot;end&quot; color&#x3D;&quot;dark&quot; name&#x3D;&quot;help-circle&quot; style&#x3D;&quot;height: 3vh&quot; [ngClass]&#x3D;&quot;{&#x27;hidden&#x27;: task &#x3D;&#x3D; &#x27;Start&#x27; || task &#x3D;&#x3D; &#x27;Overview&#x27; || hideQuit}&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-icon *ngIf&#x3D;&quot;!showOverview&quot; slot&#x3D;&quot;start&quot; color&#x3D;&quot;dark&quot; name&#x3D;&quot;close-circle&quot; style&#x3D;&quot;margin-right: 10px; height: 3vh&quot; (click)&#x3D;&quot;closeModal()&quot; [ngClass]&#x3D;&quot;{&#x27;hidden&#x27;: hideQuit}&quot;&gt;&lt;/ion-icon&gt;
+  &lt;/ion-item&gt;
+
+  &lt;ion-slides #slideElement (ionSlideWillChange)&#x3D;&quot;changeSlide()&quot; style&#x3D;&quot;height: 80%&quot;&gt;
+    &lt;ion-slide *ngFor&#x3D;&quot;let slide of slides; let i &#x3D; index&quot; style&#x3D;&quot;height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 5%; padding-right: 5%&quot;&gt;
+      &lt;img [src]&#x3D;&quot;slide[0]&quot;&gt;
+      &lt;div style&#x3D;&quot;display: flex; align-items: center; flex-shrink: 2; margin-left: 5%; margin-right: 5%; font-size: 5vw&quot;&gt;{{slide[1]}}&lt;/div&gt;
+    &lt;/ion-slide&gt;
+  &lt;/ion-slides&gt;
+
+  &lt;div style&#x3D;&quot;text-align: center; font-size: 3vh&quot;&gt;
+    &lt;span *ngFor&#x3D;&quot;let slide of slides; let i &#x3D; index&quot; style&#x3D;&quot;margin: 0 auto&quot;&gt;
+      &lt;ion-icon *ngIf&#x3D;&quot;currentSlide &#x3D;&#x3D; i&quot; color&#x3D;&quot;dark&quot; name&#x3D;&quot;radio-button-on&quot;&gt;&lt;/ion-icon&gt;
+      &lt;ion-icon *ngIf&#x3D;&quot;currentSlide !&#x3D; i&quot; (click)&#x3D;&quot;slideElement.slideTo(i)&quot; color&#x3D;&quot;dark&quot; name&#x3D;&quot;radio-button-off&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./help-modal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-item {
+    --background: rgb(206,183,124);
+}
+
+div {
+    color: white;
+    text-align: center;
+}
+
+img {
+    height: 55vh;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.hidden {
+    visibility: hidden;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content style="--background: rgb(206,183,124); --color: white">  <ion-item lines="none" style="font-size: 3vh; margin-top: 5%; text-align: center; --background: rgb(206,183,124); --color: white">    <ion-label>      <b>{{task}}</b>    </ion-label>    <ion-icon *ngIf="showOverview" (click)="toggleOverview()" slot="start" color="dark" name="arrow-back" style="height: 3vh"></ion-icon>    <ion-icon (click)="toggleOverview()" slot="end" color="dark" name="help-circle" style="height: 3vh" [ngClass]="{\'hidden\': task == \'Start\' || task == \'Overview\' || hideQuit}"></ion-icon>    <ion-icon *ngIf="!showOverview" slot="start" color="dark" name="close-circle" style="margin-right: 10px; height: 3vh" (click)="closeModal()" [ngClass]="{\'hidden\': hideQuit}"></ion-icon>  </ion-item>  <ion-slides #slideElement (ionSlideWillChange)="changeSlide()" style="height: 80%">    <ion-slide *ngFor="let slide of slides; let i = index" style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 5%; padding-right: 5%">      <img [src]="slide[0]">      <div style="display: flex; align-items: center; flex-shrink: 2; margin-left: 5%; margin-right: 5%; font-size: 5vw">{{slide[1]}}</div>    </ion-slide>  </ion-slides>  <div style="text-align: center; font-size: 3vh">    <span *ngFor="let slide of slides; let i = index" style="margin: 0 auto">      <ion-icon *ngIf="currentSlide == i" color="dark" name="radio-button-on"></ion-icon>      <ion-icon *ngIf="currentSlide != i" (click)="slideElement.slideTo(i)" color="dark" name="radio-button-off"></ion-icon>    </span>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsPage', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'ForcedChoiceComponent', 'selector': 'app-forced-choice'},{'name': 'HelpModalComponent', 'selector': 'app-help-modal'},{'name': 'HistoryPage', 'selector': 'app-history'},{'name': 'LearningTaskComponent', 'selector': 'app-learning-task'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MemoryMatchComponent', 'selector': 'app-memory-match'},{'name': 'NameFaceComponent', 'selector': 'app-name-face'},{'name': 'RaceSelectModalComponent', 'selector': 'app-race-select-modal'},{'name': 'SameDifferentComponent', 'selector': 'app-same-different'},{'name': 'ScorePageComponent', 'selector': 'app-score-page'},{'name': 'ShuffleComponent', 'selector': 'app-shuffle'},{'name': 'TermsConditionsComponent', 'selector': 'app-terms-conditions'},{'name': 'TrainingPage', 'selector': 'app-training'},{'name': 'UserSettingsPage', 'selector': 'app-user-settings'},{'name': 'WhosNewComponent', 'selector': 'app-whos-new'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HelpModalComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HelpModalComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
