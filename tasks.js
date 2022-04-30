@@ -2,7 +2,7 @@
 
 var { Client } = require('pg');
 const { achievementTitles } = require('./achievementConstants');
-const { addAchievement } = require('./achievements');
+const achievements = require('./achievements');
 
 function allDefined(req, id){
     if(typeof(req.level) === 'undefined'){
@@ -69,6 +69,7 @@ module.exports = {
                     })
                 })
                 .catch(err => {
+                    console.log(err)
                     pgClient.end();
                     return new Promise(function(resolve, reject){
                         reject(err);
@@ -97,7 +98,7 @@ module.exports = {
                     ]
 
                     const achievementTitleKey = achievementTitleKeys[numDaysIndex];
-                    return addAchievement(id, achievementTitleKey)
+                    return achievements.addAchievement(id, achievementTitleKey)
                 } else {
                     return Promise.resolve("No achievement to add.")
                 }
@@ -109,6 +110,7 @@ module.exports = {
                 })
             })
             .catch(err => {
+                console.log(err)
                 pgClient.end();
                 return new Promise(function(resolve, reject){
                     reject(err);
